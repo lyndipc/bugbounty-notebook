@@ -96,4 +96,4 @@ Or keep it local — `npm run dev` is fine for personal use.
 
 ## License
 
-Personal use. Not for redistribution.
+See [LICENSE.md](LICENSE.md)
