@@ -1,0 +1,17 @@
+{
+  "name": "bb-notebook",
+  "version": "1.0.0",
+  "description": "Bug bounty target notes — clone per target",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "notes": "node scripts/new-note.mjs",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.38.2",
+    "astro": "^6.1.1",
+    "sharp": "^0.34.5"
+  }
+}

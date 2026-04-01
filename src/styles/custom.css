@@ -1,0 +1,140 @@
+/* ============================================
+   Bug Bounty Notebook — Custom Starlight Theme
+   Bug bounty target notes
+   ============================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+    --sl-color-accent-low: #2b1d0e;
+    --sl-color-accent: #f59e0b;
+    --sl-color-accent-high: #fde68a;
+
+    --sl-color-white: #e2e8f0;
+    --sl-color-gray-1: #cbd5e1;
+    --sl-color-gray-2: #94a3b8;
+    --sl-color-gray-3: #64748b;
+    --sl-color-gray-4: #334155;
+    --sl-color-gray-5: #1e293b;
+    --sl-color-gray-6: #0f172a;
+    --sl-color-black: #020617;
+
+    --sl-font: "IBM Plex Sans", system-ui, sans-serif;
+    --sl-font-mono: "JetBrains Mono", ui-monospace, monospace;
+    --sl-text-base: 0.9375rem;
+    --sl-line-height: 1.7;
+}
+
+:root[data-theme="light"] {
+    --sl-color-accent-low: #fef3c7;
+    --sl-color-accent: #d97706;
+    --sl-color-accent-high: #78350f;
+
+    --sl-color-white: #1e293b;
+    --sl-color-gray-1: #334155;
+    --sl-color-gray-2: #475569;
+    --sl-color-gray-3: #94a3b8;
+    --sl-color-gray-4: #cbd5e1;
+    --sl-color-gray-5: #f1f5f9;
+    --sl-color-gray-6: #f8fafc;
+    --sl-color-black: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+pre {
+    border: 1px solid var(--sl-color-gray-4) !important;
+    border-radius: 6px !important;
+    font-size: 0.85rem !important;
+}
+
+code {
+    font-family: var(--sl-font-mono) !important;
+    font-size: 0.85em;
+}
+
+:not(pre) > code {
+    background: var(--sl-color-gray-5) !important;
+    border: 1px solid var(--sl-color-gray-4);
+    border-radius: 4px;
+    padding: 0.15em 0.35em;
+    color: var(--sl-color-accent-high);
+    font-size: 0.85em;
+}
+
+nav.sidebar .top-level > li > details > summary,
+nav.sidebar .top-level > li > a {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.875rem;
+}
+
+th {
+    background: var(--sl-color-gray-5);
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+}
+
+th,
+td {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--sl-color-gray-4);
+}
+
+tr:hover {
+    background: var(--sl-color-accent-low);
+}
+
+ul:has(> li > input[type="checkbox"]) {
+    list-style: none;
+    padding-left: 0.5rem;
+}
+
+ul > li > input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: var(--sl-color-accent);
+}
+
+.sl-markdown-content h2 {
+    border-bottom: 1px solid var(--sl-color-gray-4);
+    padding-bottom: 0.4rem;
+    margin-top: 2.5rem;
+}
+
+blockquote {
+    border-left: 3px solid var(--sl-color-accent);
+    background: var(--sl-color-accent-low);
+    padding: 0.8rem 1rem;
+    border-radius: 0 6px 6px 0;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--sl-color-gray-6);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--sl-color-gray-4);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--sl-color-gray-3);
+}
