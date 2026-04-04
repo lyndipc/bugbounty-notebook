@@ -19,69 +19,23 @@ export default defineConfig({
         },
         {
           label: "Methodology",
-          items: [
-            { label: "Overview", slug: "methodology" },
-            { label: "Workflow", slug: "methodology/workflow" },
-            { label: "Scope & Rules", slug: "methodology/scope-and-rules" },
-            { label: "Submission Tips", slug: "methodology/submission-tips" },
-          ],
+          link: "/methodology/",
         },
         {
           label: "Reconnaissance",
-          items: [
-            { label: "Overview", slug: "recon" },
-            { label: "Subdomain Enum", slug: "recon/subdomain-enum" },
-            { label: "Port & Service Scan", slug: "recon/port-scan" },
-            { label: "Content Discovery", slug: "recon/content-discovery" },
-            { label: "JS Analysis", slug: "recon/js-analysis" },
-            { label: "Tech Fingerprinting", slug: "recon/tech-fingerprinting" },
-            { label: "API Discovery", slug: "recon/api-discovery" },
-          ],
+          link: "/recon/",
         },
         {
           label: "Vulnerabilities",
-          items: [
-            { label: "Overview", slug: "vulnerabilities" },
-            { label: "XSS", slug: "vulnerabilities/xss" },
-            { label: "SQL Injection", slug: "vulnerabilities/sqli" },
-            { label: "SSRF", slug: "vulnerabilities/ssrf" },
-            { label: "IDOR / BAC", slug: "vulnerabilities/idor" },
-            { label: "Authentication Bugs", slug: "vulnerabilities/auth" },
-            { label: "File Upload", slug: "vulnerabilities/file-upload" },
-            { label: "CSRF", slug: "vulnerabilities/csrf" },
-            { label: "Open Redirect", slug: "vulnerabilities/open-redirect" },
-            {
-              label: "Race Conditions",
-              slug: "vulnerabilities/race-conditions",
-            },
-            { label: "Business Logic", slug: "vulnerabilities/business-logic" },
-            {
-              label: "Info Disclosure",
-              slug: "vulnerabilities/info-disclosure",
-            },
-            {
-              label: "Subdomain Takeover",
-              slug: "vulnerabilities/subdomain-takeover",
-            },
-          ],
+          link: "/vulnerabilities/",
         },
         {
           label: "Exploitation",
-          items: [
-            { label: "Overview", slug: "exploitation" },
-            { label: "Chaining Bugs", slug: "exploitation/chaining" },
-            { label: "Bypass Techniques", slug: "exploitation/bypasses" },
-            { label: "Payloads", slug: "exploitation/payloads" },
-          ],
+          link: "/exploitation/",
         },
         {
           label: "Reporting",
-          items: [
-            { label: "Overview", slug: "reporting" },
-            { label: "Report Template", slug: "reporting/template" },
-            { label: "Writing Tips", slug: "reporting/writing-tips" },
-            { label: "Findings Log", slug: "reporting/findings-log" },
-          ],
+          link: "/reporting/",
         },
         {
           label: "Cheatsheets",
